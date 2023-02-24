@@ -1,3 +1,11 @@
 @import '../css/nullstyle.css';
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+.footer {
+  background: linear-gradient(180deg, rgb(30, 30, 70) 0%, rgb(38, 21, 100) 24%, rgb(47, 21, 140) 78%, rgb(28, 0, 136) 100%);
+  margin-top: 110px;
+  padding: 88px 375px;
+}
+.footer__bg {
+  position: absolute;
+}

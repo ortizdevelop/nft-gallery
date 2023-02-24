@@ -1,1 +1,51 @@
 @import './Imports.scss';
+
+.footer {
+    background: $bgcl1;
+    margin-top: 110px;
+    padding: 88px 375px;
+
+    &__bg {
+        position: absolute;
+    }
+
+    &__copyright {}
+}
+
+.footer-info {
+
+    &__column {}
+
+    &__list {}
+}
+
+.footer-explore {
+
+    &__column {}
+
+    &__list {}
+}
+
+.list-title {}
+
+.footer-marketplace {
+
+    &__column {}
+
+    &__list {}
+}
+
+.footer-newsletter {
+
+    &__column {}
+
+    &__list {}
+}
+
+.list-img {}
+
+.list-form {}
+
+.list-input {}
+
+.list-btn {}

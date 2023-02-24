@@ -18,6 +18,7 @@ import "./components/Animations";
 // Import CSS
 import "./styles/css/App.css";
 import "./styles/css/Header.css";
+import "./styles/css/Footer.css";
 
 // Import images
 
