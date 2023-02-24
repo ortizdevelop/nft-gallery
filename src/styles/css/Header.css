@@ -137,6 +137,7 @@
   padding: 42.6px 0;
   align-items: center;
   justify-content: space-between;
+  font-family: "Roboto", sans-serif;
   z-index: 1;
 }
 .header .navbar__column {
@@ -160,7 +161,7 @@
 .header .navbar__list span::before {
   content: "";
   position: absolute;
-  left: 334.5px;
+  left: 339.5px;
   top: 70.04px;
   width: 47.41px;
   height: 1px;
@@ -194,7 +195,7 @@
 .header .navbar__list:nth-child(2) span::before {
   content: "";
   position: absolute;
-  left: 413.9px;
+  left: 415.9px;
   top: 70.04px;
   width: 67.41px;
   height: 1px;
@@ -220,7 +221,7 @@
 .header .navbar__list:nth-child(4) span::before {
   content: "";
   position: absolute;
-  left: 613.9px;
+  left: 611.9px;
   top: 70.04px;
   width: 53.41px;
   height: 1px;
@@ -233,7 +234,7 @@
 .header .navbar__list:nth-child(5) span::before {
   content: "";
   position: absolute;
-  left: 693.9px;
+  left: 691.9px;
   top: 70.04px;
   width: 68.41px;
   height: 1px;
