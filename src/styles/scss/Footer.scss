@@ -1,9 +1,16 @@
 @import './Imports.scss';
 
 .footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 110px;
+    grid-row-gap: 0px;
     margin-top: 110px;
     padding: 88px 375px;
     background: $bgcl1;
+    font-family: $ff1;
 
     &__bg {
         display: none;
@@ -15,43 +22,146 @@
         }
     }
 
-    &__copyright {}
+    &__copyright {
+        position: relative;
+        top: 64px;
+        left: 120%;
+        width: 327px;
+        font-size: 18px;
+        color: #fff;
+    }
 }
 
 .footer-info {
 
     &__column {}
 
-    &__list {}
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        transition: $tr;
+
+        img {
+            margin-right: 21px;
+            transition: $tr;
+        }
+
+        p {
+            font-size: 16px;
+            color: #dedede;
+            transition: $tr;
+        }
+    }
 }
 
 .footer-explore {
 
     &__column {}
 
-    &__list {}
+    &__list {
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #dedede;
+    }
 }
 
-.list-title {}
 
 .footer-marketplace {
 
     &__column {}
 
-    &__list {}
+    &__list {
+        margin-bottom: 20px;
+
+        p {
+            font-size: 16px;
+            color: #dedede;
+        }
+    }
 }
 
 .footer-newsletter {
 
     &__column {}
 
-    &__list {}
+    &__list {
+        margin-bottom: 20px;
+        width: 170px;
+
+        p {
+            font-size: 16px;
+            color: #dedede;
+        }
+    }
 }
 
-.list-img {}
+.list-content {
+    cursor: pointer;
+    transition: $tr2;
 
-.list-form {}
+    &:hover {
+        scale: 1.03;
 
-.list-input {}
+        p {
+            color: $color2;
+        }
+    }
 
-.list-btn {}
+    &:active {
+        transform: translateY(1px);
+
+        p {
+            color: $color4;
+        }
+    }
+}
+
+.list-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.list-img {
+    margin-right: 20px;
+    cursor: pointer;
+    transition: $tr;
+}
+
+.list-form {
+    display: flex;
+}
+
+.list-input {
+    font-size: 14px;
+    color: #dedede;
+    background-color: transparent;
+    padding: 11px 78px 11px 10px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    transition: $tr;
+
+    &::placeholder {
+        font-size: 14px;
+        color: #dedede;
+        transition: $tr;
+    }
+}
+
+.list-btn {
+    padding: 9px 10px;
+    position: relative;
+    right: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: $color2;
+    transition: $tr;
+    border-radius: 0px 5px 5px 0px;
+
+    &:hover {
+        color: $color2;
+        background-color: $color4;
+    }
+}

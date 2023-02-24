@@ -27,15 +27,15 @@ const Footer = () => {
               These cases are perfectly simple and easy to distinguish.
             </p>
           </li>
-          <li className="footer-info__list">
+          <li className="footer-info__list list-content">
             <img src={headphones} alt="" />
             <p>+7 (495) 2222-0000-32</p>
           </li>
-          <li className="footer-info__list">
+          <li className="footer-info__list list-content">
             <img src={mail} alt="" />
             <p>Hello.me@nft.com</p>
           </li>
-          <li className="footer-info__list">
+          <li className="footer-info__list list-content">
             <img src={geo} alt="" />
             <p>00000 Collins Street West Victoria 66666 Australia</p>
           </li>
@@ -46,19 +46,19 @@ const Footer = () => {
           <li className="footer-explore__list">
             <p className="list-title">Explore</p>
           </li>
-          <li className="footer-explore__list">
+          <li className="footer-explore__list list-content">
             <p>My Account</p>
           </li>
-          <li className="footer-explore__list">
+          <li className="footer-explore__list list-content">
             <p>Create Now</p>
           </li>
-          <li className="footer-explore__list">
+          <li className="footer-explore__list list-content">
             <p>List a Item</p>
           </li>
-          <li className="footer-explore__list">
+          <li className="footer-explore__list list-content">
             <p>Privacy Polocy</p>
           </li>
-          <li className="footer-explore__list">
+          <li className="footer-explore__list list-content">
             <p>FAQs</p>
           </li>
         </ul>
@@ -68,16 +68,16 @@ const Footer = () => {
           <li className="footer-marketplace__list">
             <p className="list-title">Marketplece</p>
           </li>
-          <li className="footer-marketplace__list">
+          <li className="footer-marketplace__list list-content">
             <p>Art</p>
           </li>
-          <li className="footer-marketplace__list">
+          <li className="footer-marketplace__list list-content">
             <p>Photo</p>
           </li>
-          <li className="footer-marketplace__list">
+          <li className="footer-marketplace__list list-content">
             <p>Create a Store</p>
           </li>
-          <li className="footer-marketplace__list">
+          <li className="footer-marketplace__list list-content">
             <p>Start Selling</p>
           </li>
         </ul>
@@ -100,7 +100,7 @@ const Footer = () => {
             <form action="" className="list-form">
               <input
                 placeholder="Enter Your Email"
-                type={"email"}
+                type="email"
                 className="list-input"
                 required
               />
