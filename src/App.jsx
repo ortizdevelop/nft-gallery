@@ -10,6 +10,7 @@ import {
   scroller,
 } from "react-scroll";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 // Import components
 import "./components/Animations";
@@ -25,6 +26,7 @@ function App() {
     <div className="app">
       <Header />
       <main className="app-main"></main>
+      <Footer />
     </div>
   );
 }
