@@ -1,0 +1,32 @@
+// Import libraries
+import { Motion } from "framer-motion";
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+import Header from "./components/Header";
+
+// Import components
+import "./components/Animations";
+
+// Import CSS
+import "./styles/css/App.css";
+import "./styles/css/Header.css";
+
+// Import images
+
+function App() {
+  return (
+    <div className="app">
+      <Header />
+      <main className="app-main"></main>
+    </div>
+  );
+}
+
+export default App;
