@@ -62,7 +62,15 @@ const navBtn = {
 
 const Header = () => {
   return (
-    <motion.header initial="hidden" whileInView="visible" className="header">
+    <motion.header
+      initial="hidden"
+      whileInView="visible"
+      className="header"
+      viewport={{
+        amont: 0.2,
+        once: true,
+      }}
+    >
       <div className="header__bg">
         <img src={Bg} alt="" />
       </div>

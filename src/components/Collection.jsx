@@ -1,3 +1,6 @@
+// Import libraries
+import { motion } from "framer-motion";
+
 //Import images
 import avatar1 from "../img/Collection/avatar1.png";
 import avatar2 from "../img/Collection/avatar2.png";
@@ -21,118 +24,343 @@ import img11 from "../img/Collection/img11.png";
 
 import vector from "../img/Collection/Vector.png";
 
+const anim1 = {
+  hidden: {
+    y: -10,
+    opacity: 0,
+  },
+  visible: (time) => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: time * 0.4,
+      duration: 1,
+      ease: "easeInOut",
+    },
+  }),
+};
+
+const anim1_1 = {
+  hidden: {
+    y: 10,
+    opacity: 0,
+  },
+  visible: (time) => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: time * 0.4,
+      duration: 1,
+      ease: "easeInOut",
+    },
+  }),
+};
+
+const anim2 = {
+  hidden: {
+    scale: 0.85,
+    opacity: 0,
+  },
+  visible: (time) => ({
+    scale: 1,
+    opacity: 1,
+    transition: {
+      delay: time * 0.4,
+      duration: 1,
+      ease: "easeInOut",
+    },
+  }),
+};
+
+const anim2_2 = {
+  hidden: {
+    scale: 0.85,
+    opacity: 0,
+  },
+  visible: (time) => ({
+    scale: 1,
+    opacity: 1,
+    transition: {
+      delay: time * 0.2,
+      duration: 0.65,
+      ease: "easeInOut",
+    },
+  }),
+};
+
 const Collection = () => {
   return (
-    <div className="collection">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      className="collection"
+      viewport={{
+        amount: 0.2,
+      }}
+    >
       <article className="nft-collection">
-        <h1 className="nft-collection__title app-title">Collection</h1>
-        <p className="nft-collection__name app-name">
+        <motion.h1
+          custom={1}
+          variants={anim1}
+          className="nft-collection__title app-title"
+        >
+          Collection
+        </motion.h1>
+        <motion.p
+          custom={2}
+          variants={anim1}
+          className="nft-collection__name app-name"
+        >
           NFT Collection <span>Art</span>
           <img src={vector} alt="" className="app-vector" />
-        </p>
+        </motion.p>
         <ul className="nft-collection__columns app-column">
-          <li className="nft-collection__list app-list">
-            <img
+          <motion.li
+            custom={3}
+            variants={anim2}
+            className="nft-collection__list app-list"
+          >
+            <motion.img
               src={slider1}
+              custom={4.5}
+              variants={anim1}
               alt=""
               className="nft-collection__slider app-slider"
             />
-            <img
+            <motion.img
               src={avatar1}
+              custom={5}
+              variants={anim1_1}
               alt=""
               className="nft-collection__avatar app-avatar"
             />
-            <p className="nft-collection__profile-name app-profile-name">
+            <motion.p
+              variants={anim2}
+              custom={6}
+              className="nft-collection__profile-name app-profile-name"
+            >
               Alabama khan
-            </p>
-            <p className="nft-collection__bio app-bio">
+            </motion.p>
+            <motion.p
+              variants={anim2}
+              custom={7}
+              className="nft-collection__bio app-bio"
+            >
               which is the same as saying through shrinking from toil and pain.
               These cases are
-            </p>
-            <button type="submit" className="nft-collection__btn app-button">
+            </motion.p>
+            <motion.button
+              custom={8}
+              variants={anim2}
+              type="submit"
+              className="nft-collection__btn app-button"
+            >
               +FOLLOW
-            </button>
-          </li>
-          <li className="nft-collection__list app-list">
-            <img
+            </motion.button>
+          </motion.li>
+          <motion.li
+            custom={4}
+            variants={anim2}
+            className="nft-collection__list app-list"
+          >
+            <motion.img
               src={slider2}
+              custom={5.5}
+              variants={anim1}
               alt=""
               className="nft-collection__slider app-slider"
             />
-            <img
+            <motion.img
               src={avatar2}
+              custom={6}
+              variants={anim1_1}
               alt=""
               className="nft-collection__avatar app-avatar"
             />
-            <p className="nft-collection__profile-name app-profile-name">
+            <motion.p
+              variants={anim2}
+              custom={7}
+              className="nft-collection__profile-name app-profile-name"
+            >
               Alabama khan
-            </p>
-            <p className="nft-collection__bio app-bio">
+            </motion.p>
+            <motion.p
+              variants={anim2}
+              custom={8}
+              className="nft-collection__bio app-bio"
+            >
               which is the same as saying through shrinking from toil and pain.
               These cases are
-            </p>
-            <button type="submit" className="nft-collection__btn app-button">
+            </motion.p>
+            <motion.button
+              custom={9}
+              variants={anim2}
+              type="submit"
+              className="nft-collection__btn app-button"
+            >
               +FOLLOW
-            </button>
-          </li>
-          <li className="nft-collection__list app-list">
-            <img
+            </motion.button>
+          </motion.li>
+          <motion.li
+            custom={5}
+            variants={anim2}
+            className="nft-collection__list app-list"
+          >
+            <motion.img
               src={slider3}
+              custom={6.5}
+              variants={anim1}
               alt=""
               className="nft-collection__slider app-slider"
             />
-            <img
+            <motion.img
               src={avatar3}
+              custom={7}
+              variants={anim1_1}
               alt=""
               className="nft-collection__avatar app-avatar"
             />
-            <p className="nft-collection__profile-name app-profile-name">
+            <motion.p
+              variants={anim2}
+              custom={8}
+              className="nft-collection__profile-name app-profile-name"
+            >
               Alabama khan
-            </p>
-            <p className="nft-collection__bio app-bio">
+            </motion.p>
+            <motion.p
+              variants={anim2}
+              custom={9}
+              className="nft-collection__bio app-bio"
+            >
               which is the same as saying through shrinking from toil and pain.
               These cases are
-            </p>
-            <button type="submit" className="nft-collection__btn app-button">
+            </motion.p>
+            <motion.button
+              custom={10}
+              variants={anim2}
+              type="submit"
+              className="nft-collection__btn app-button"
+            >
               +FOLLOW
-            </button>
-          </li>
+            </motion.button>
+          </motion.li>
         </ul>
-        <div className="nft-collection__link app-link">
+        <motion.div
+          custom={1}
+          variants={anim1_1}
+          whileTap={{
+            translateY: 2,
+          }}
+          className="nft-collection__link app-link"
+        >
           <a href="#s">
             <span>View All Category</span>
           </a>
-        </div>
+        </motion.div>
       </article>
       <article className="nft-art">
-        <p className="nft-art__name app-name">
+        <motion.p
+          custom={1}
+          variants={anim1}
+          className="nft-art__name app-name"
+        >
           NFT art, Domain name, Stachu, Collection Gallery
-        </p>
-        <p className="nft-art__subtitile app-subtitle">
+        </motion.p>
+        <motion.p
+          custom={3}
+          variants={anim1}
+          className="nft-art__subtitile app-subtitle"
+        >
           It has survived not only five centuries, but also the leap into <br />
           electronic typesetting, remaining essentially unchanged
-        </p>
+        </motion.p>
         <ul className="nft-art__columns app-column">
           <li className="nft-art__list app-list">
-            <img src={img1} alt="" className="nft-art__image app-img" />
-            <img src={img2} alt="" className="nft-art__image app-img" />
-            <img src={img3} alt="" className="nft-art__image app-img" />
-            <img src={img4} alt="" className="nft-art__image app-img" />
+            <motion.img
+              variants={anim2_2}
+              custom={1}
+              src={img1}
+              alt=""
+              className="nft-art__image app-img"
+            />
+            <motion.img
+              variants={anim2_2}
+              custom={5}
+              src={img2}
+              alt=""
+              className="nft-art__image app-img"
+            />
+            <motion.img
+              variants={anim2_2}
+              custom={11}
+              src={img3}
+              alt=""
+              className="nft-art__image app-img"
+            />
+            <motion.img
+              variants={anim2_2}
+              custom={8}
+              src={img4}
+              alt=""
+              className="nft-art__image app-img"
+            />
           </li>
           <li className="nft-art__list app-list">
-            <img src={img5} alt="" className="nft-art__image app-img" />
-            <img src={img6} alt="" className="nft-art__image app-img" />
-            <img src={img7} alt="" className="nft-art__image app-img" />
+            <motion.img
+              variants={anim2_2}
+              custom={3}
+              src={img5}
+              alt=""
+              className="nft-art__image app-img"
+            />
+            <motion.img
+              variants={anim2_2}
+              custom={7}
+              src={img6}
+              alt=""
+              className="nft-art__image app-img"
+            />
+            <motion.img
+              variants={anim2_2}
+              custom={2}
+              src={img7}
+              alt=""
+              className="nft-art__image app-img"
+            />
           </li>
           <li className="nft-art__list app-list">
-            <img src={img8} alt="" className="nft-art__image app-img" />
-            <img src={img9} alt="" className="nft-art__image app-img" />
-            <img src={img10} alt="" className="nft-art__image app-img" />
-            <img src={img11} alt="" className="nft-art__image app-img" />
+            <motion.img
+              variants={anim2_2}
+              custom={6}
+              src={img8}
+              alt=""
+              className="nft-art__image app-img"
+            />
+            <motion.img
+              variants={anim2_2}
+              custom={5}
+              src={img9}
+              alt=""
+              className="nft-art__image app-img"
+            />
+            <motion.img
+              variants={anim2_2}
+              custom={8}
+              src={img10}
+              alt=""
+              className="nft-art__image app-img"
+            />
+            <motion.img
+              variants={anim2_2}
+              custom={4.5}
+              src={img11}
+              alt=""
+              className="nft-art__image app-img"
+            />
           </li>
         </ul>
       </article>
-    </div>
+    </motion.div>
   );
 };
 

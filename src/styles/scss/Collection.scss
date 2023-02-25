@@ -34,6 +34,22 @@
 
             &:hover {
                 scale: 1.02;
+
+                .nft-collection__profile-name {
+                    background: linear-gradient(to right, $color2 10%, $color8 50%, #000 60%);
+                    background-size: auto auto;
+                    background-clip: border-box;
+                    background-size: 200% auto;
+                    background-clip: text;
+                    animation: ortizdevelop-anim 4s linear infinite;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: $tr;
+                }
+
+                .nft-collection__avatar {
+                    border: 4px solid $color2;
+                }
             }
         }
 
@@ -44,6 +60,8 @@
         }
 
         &__avatar {
+            border: 4px solid transparent;
+            border-radius: 50%;
             margin-bottom: 10px;
             transition: $tr;
         }
@@ -268,4 +286,17 @@
     color: #313131;
 }
 
-.app-img {}
+.app-img {
+    border: 2px solid transparent;
+    transition: $tr;
+
+    &:hover {
+        border: 2px solid $color2;
+    }
+}
+
+@keyframes ortizdevelop-anim {
+    to {
+        background-position: 200% center;
+    }
+}
