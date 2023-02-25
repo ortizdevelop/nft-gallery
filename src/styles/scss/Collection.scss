@@ -1,46 +1,213 @@
 @import './Imports.scss';
 
 .collection {
+    width: 100%;
+    font-family: $ff1;
+    margin-top: 110px;
+    padding: 0 352px;
+
     .nft-collection {
+        text-align: center;
 
         &__title {}
 
-        &__name {}
+        &__profile-name {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            color: #000;
+            margin-bottom: 10px;
+            transition: $tr;
+        }
 
         &__columns {}
 
-        &__list {}
+        &__list {
+            width: 370px;
+            height: 480px;
+            background-color: #fff;
+            border: 0.5px solid #e3e3e3;
+            box-shadow: 0 0 10px 0 rgba(221, 221, 221, 0.5);
+            margin-right: 30px;
+            text-align: center;
+            transition: $tr;
 
-        &__slider {}
+            &:hover {
+                scale: 1.02;
+            }
+        }
 
-        &__avatar {}
+        &__slider {
+            padding: 0 11px;
+            margin-bottom: 30px;
+            transition: $tr;
+        }
 
-        &__bio {}
+        &__avatar {
+            margin-bottom: 10px;
+            transition: $tr;
+        }
 
-        &__btn {}
+        &__bio {
+            margin-bottom: 30px;
+            font-size: 16px;
+            text-align: center;
+            color: #313131;
+            transition: $tr;
+        }
 
-        &__link {}
+        &__btn {
+            padding: 10px 37px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: center;
+            background-color: transparent;
+            border: 1px solid #313131;
+            border-radius: 20px;
+            color: #313131;
+            transition: $tr;
+
+            &:hover {
+                background-color: $color2;
+            }
+
+            &:active {
+                background-color: transparent;
+                color: $color2;
+                border: 1px solid $color2;
+            }
+        }
+
+        &__link {
+            transition: $tr;
+        }
     }
 
     .nft-art {
 
-        &__name {}
+        &__name {
+            margin-top: 110px;
+        }
 
-        &__subtitile {}
+        &__subtitile {
+            margin-top: 20px;
+            margin-bottom: 50.8px;
+            text-align: center;
+        }
 
-        &__columns {}
+        &__columns {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
 
-        &__list {}
+            li {
+                &:nth-child(2) {
 
-        &__image {}
+                    img {
+                        &:nth-child(1) {
+                            position: relative;
+                            top: 20px;
+                        }
+
+                        &:nth-child(2) {
+                            position: relative;
+                            top: -68.49px;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+
+                    img {
+                        &:nth-child(1) {
+                            position: relative;
+                            top: -48.49px;
+                        }
+
+                        &:nth-child(2) {
+                            position: relative;
+                            top: -68.49px;
+                        }
+
+                        &:nth-child(3) {
+                            position: relative;
+                            top: -68.49px;
+                        }
+
+                        &:nth-child(4) {
+                            position: relative;
+                            top: -68.49px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__list {
+            width: 1270px;
+        }
+
+        &__image {
+            margin-right: 18px;
+            transition: $tr;
+
+            &:hover {
+                scale: 1.02;
+            }
+        }
     }
 }
 
-.app-title {}
+.app-title {
+    color: #ff014f;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    transition: $tr;
+}
 
-.app-name {}
+.app-name {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #1E2D48;
+    margin-bottom: 50px;
+    text-align: center;
+    transition: $tr;
 
-.app-column {}
+    span {
+        transition: $tr;
+    }
+
+    img {
+        position: relative;
+        left: 11px;
+        transition: $tr;
+        opacity: 0;
+    }
+
+    &:hover {
+        span {
+            color: $color2;
+            border-bottom: 1px solid $color2;
+            cursor: pointer;
+        }
+
+        img {
+            opacity: 1;
+            transform: translateY(23px);
+        }
+    }
+}
+
+.app-column {
+    display: flex;
+}
 
 .app-list {}
 
@@ -54,8 +221,51 @@
 
 .app-button {}
 
-.app-link {}
+.app-link {
+    margin-top: 50px;
+    margin-bottom: 110px;
+    text-align: center;
+    transition: $tr;
 
-.app-subtitle {}
+    a {
+        padding: 15px 30px;
+        background-color: #ff014f;
+        border-radius: 30px;
+        transition: $tr;
+    }
+
+    span {
+        margin-top: 50px;
+        margin-bottom: 110px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: #fff;
+        transition: $tr;
+    }
+
+    &:hover {
+        a {
+            box-shadow: 0px 5px 1px 2px rgba(34, 34, 34, 0.89);
+        }
+    }
+
+    &:active {
+        transform: translateY(2px);
+
+        a {
+            box-shadow: 0px 2px 1px 2px rgba(34, 34, 34, 0.89);
+            transition: $tr;
+        }
+    }
+}
+
+.app-subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #313131;
+}
 
 .app-img {}
