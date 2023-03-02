@@ -21,6 +21,7 @@ import "./styles/css/Footer.css";
 // Import components
 import "./components/Animations";
 import Collection from "./components/Collection";
+import Marketplace from "./components/Marketplace/Marketplace";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Header />
       <main className="app-main">
         <Collection />
+        <Marketplace />
       </main>
       <Footer />
     </div>

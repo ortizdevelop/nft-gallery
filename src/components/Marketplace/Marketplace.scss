@@ -1,0 +1,57 @@
+@import '../../styles/scss/Imports.scss';
+
+.marketplace {
+
+    &__title {}
+
+    &__name {}
+
+    &__column {}
+
+    &__list {}
+
+    &__image {}
+
+    &__name_and_item {}
+
+    &__category {}
+
+    &__item {}
+
+    &__link {}
+
+    &__btn {
+        padding: 10px 37px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid #313131;
+        border-radius: 20px;
+        color: #313131;
+        transition: $tr;
+
+        &:hover {
+            background-color: $color2;
+        }
+
+        &:active {
+            background-color: transparent;
+            color: $color2;
+            border: 1px solid $color2;
+        }
+    }
+}
+
+.large_market {
+
+
+    &__image {}
+
+    &__column {}
+
+    &__text {}
+
+    &__list {}
+}

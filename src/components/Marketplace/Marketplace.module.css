@@ -1,0 +1,23 @@
+@import '../css/nullstyle.css';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+.marketplace__btn {
+  padding: 10px 37px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #313131;
+  border-radius: 20px;
+  color: #313131;
+  transition: 0.35s;
+}
+.marketplace__btn:hover {
+  background-color: #FF014F;
+}
+.marketplace__btn:active {
+  background-color: transparent;
+  color: #FF014F;
+  border: 1px solid #FF014F;
+}
