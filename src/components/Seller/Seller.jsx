@@ -8,6 +8,12 @@ import avatar7 from "./image/avatar7.png";
 import avatar8 from "./image/avatar8.png";
 import avatar9 from "./image/avatar9.png";
 
+import wallet from "./image/wallet.png";
+import notepad from "./image/notepad.png";
+import collect from "./image/collection.png";
+import nft from "./image/NFT.png";
+import bg from "./image/bg.png";
+
 import styles from "./styles/Seller.module.css";
 
 const Seller = (props) => {
@@ -147,32 +153,40 @@ const Seller = (props) => {
           </li>
         </ul>
       </article>
-      <article>
-        <p></p>
-        <div>
-          <ul>
-            <li>
-              <img src="" alt="" />
-              <p></p>
-              <p></p>
+      <article className={styles.sell}>
+        <p className={styles.sell__title}>Creat And Sell Your NFTs</p>
+        <div className={styles.sell__content}>
+          <ul className={styles.sell__column}>
+            <li className={styles.sell__list}>
+              <img className={styles.sell__image} src={wallet} alt="" />
+              <p className={styles.sell__subtitle}>Setup Your Wallet</p>
+              <p className={styles.sell__text}>
+                when our power of choice is untram and when nothing prevents our
+              </p>
             </li>
-            <li>
-              <img src="" alt="" />
-              <p></p>
-              <p></p>
+            <li className={styles.sell__list}>
+              <img className={styles.sell__image} src={notepad} alt="" />
+              <p className={styles.sell__subtitle}>For Sale Listing</p>
+              <p className={styles.sell__text}>
+                when our power of choice is untram and when nothing prevents our
+              </p>
             </li>
-            <li>
-              <img src="" alt="" />
-              <p></p>
-              <p></p>
+            <li className={styles.sell__list}>
+              <img className={styles.sell__image} src={collect} alt="" />
+              <p className={styles.sell__subtitle}>Creat Your Collection</p>
+              <p className={styles.sell__text}>
+                when our power of choice is untram and when nothing prevents our
+              </p>
             </li>
-            <li>
-              <img src="" alt="" />
-              <p></p>
-              <p></p>
+            <li className={styles.sell__list}>
+              <img className={styles.sell__image} src={nft} alt="" />
+              <p className={styles.sell__subtitle}>Add Your NFT</p>
+              <p className={styles.sell__text}>
+                when our power of choice is untram and when nothing prevents our
+              </p>
             </li>
           </ul>
-          <img src="" alt="" />
+          <img className={styles.sell__bg} src={bg} alt="" />
         </div>
       </article>
     </section>

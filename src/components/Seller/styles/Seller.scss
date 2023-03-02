@@ -131,20 +131,78 @@
 }
 
 .sell {
+    margin-top: 110.65px;
+    padding: 0 305px;
 
-    &__title {}
+    &__title {
+        margin-bottom: 50.47px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-transform: capitalize;
+        color: #1e2d48;
+    }
 
-    &__content{}
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 73.21px;
+        grid-row-gap: 0px;
+    }
 
-    &__column{}
+    &__column {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 0px;
+    }
 
-    &__list{}
+    &__list {
+        margin-bottom: 30px;
+        padding: 10px;
+        transition: $tr;
+        border-radius: 3px;
+        cursor: pointer;
 
-    &__image{}
+        &:hover {
+            transform: scale(1.02);
+            background-color: $color2;
 
-    &__subtitle{}
+            img,
+            p {
+                border-radius: 3px;
+                background-color: $color4;
+            }
+        }
+    }
 
-    &__text{}
+    &__image {
+        padding: 6px;
+        margin-bottom: 20.54px;
+        transition: $tr;
+    }
 
-    &__bg{}
+    &__subtitle {
+        padding: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #1e2d48;
+        margin-bottom: 10.3px;
+        transition: $tr;
+    }
+
+    &__text {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #313131;
+        transition: $tr;
+    }
+
+    &__bg {}
 }
