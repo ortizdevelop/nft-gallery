@@ -9,19 +9,18 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 // Import CSS
 import "./styles/css/App.css";
-import "./styles/css/Header.css";
-import "./styles/css/Collection.css";
-import "./styles/css/Footer.css";
+import "./styles/css/nullstyle.css";
 
 // Import components
 import "./components/Animations";
-import Collection from "./components/Collection";
+import Collection from "./components/Collection/Collection";
 import Marketplace from "./components/Marketplace/Marketplace";
+import Auction from "./components/Auction/Auction";
 
 function App() {
   return (
@@ -30,6 +29,7 @@ function App() {
       <main className="app-main">
         <Collection />
         <Marketplace />
+        <Auction />
       </main>
       <Footer />
     </div>

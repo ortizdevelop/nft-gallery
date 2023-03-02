@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+.auction {
+  margin-top: 110px;
+  padding: 0 375px;
+}
+.auction__title {
+  font-size: 16px;
+  color: #ff014f;
+  text-align: center;
+}
+.auction__subtitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #1e2d48;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.auction .auction_columns {
+  font-family: "DM Sans", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+.auction .auction_columns__list {
+  padding: 20px;
+  width: 370px;
+  height: 449.72px;
+  background-color: #fff;
+  border: 0.5px solid #e3e3e3;
+  box-shadow: 0 0 30px 0 #ddd;
+  margin-bottom: 30px;
+  transition: 0.35s;
+}
+.auction .auction_columns__list:hover {
+  scale: 1.02;
+}
+.auction .auction_columns__list:hover p:nth-child(2) {
+  color: #FF014F;
+}
+.auction .auction_columns__product_live {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.auction .auction_columns__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.auction .auction_columns__ETH {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.auction .auction_columns button {
+  width: 100%;
+  margin-top: 30px;
+  transition: 0.35s;
+}
+
+.name {
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #1e2d48;
+  font-weight: 500;
+}
+
+.profile_link {
+  margin-left: 70px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: lowercase;
+  color: #313131;
+}
+
+.crypto {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #1e2d48;
+}
+
+.button {
+  padding: 10px 37px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #313131;
+  border-radius: 20px;
+  color: #313131;
+  transition: 0.35s;
+}
+.button:hover {
+  background-color: #FF014F;
+}
+.button:active {
+  background-color: #FF014F;
+  color: #FFFFFF;
+  border: 1px solid #FF014F;
+}

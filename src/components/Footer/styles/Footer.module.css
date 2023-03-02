@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 110px;
+  grid-row-gap: 0px;
+  margin-top: 110px;
+  padding: 88px 375px;
+  background: linear-gradient(180deg, rgb(30, 30, 70) 0%, rgb(38, 21, 100) 24%, rgb(47, 21, 140) 78%, rgb(28, 0, 136) 100%);
+  font-family: "DM Sans", sans-serif;
+}
+.footer__bg {
+  display: none;
+}
+.footer__bg img {
+  width: 100%;
+  position: absolute;
+  left: 1px;
+}
+.footer__copyright {
+  position: relative;
+  top: 64px;
+  left: 120%;
+  width: 327px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-info__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  transition: 0.35s;
+}
+.footer-info__list img {
+  margin-right: 21px;
+  transition: 0.35s;
+}
+.footer-info__list p {
+  font-size: 16px;
+  color: #dedede;
+  transition: 0.35s;
+}
+
+.footer-explore__list {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #dedede;
+}
+
+.footer-marketplace__list {
+  margin-bottom: 20px;
+}
+.footer-marketplace__list p {
+  font-size: 16px;
+  color: #dedede;
+}
+
+.footer-newsletter__list {
+  margin-bottom: 20px;
+  width: 170px;
+}
+.footer-newsletter__list p {
+  font-size: 16px;
+  color: #dedede;
+}
+
+.list-content {
+  cursor: pointer;
+  transition: 0.65s;
+}
+.list-content:hover {
+  scale: 1.03;
+}
+.list-content:hover p {
+  color: #FF014F;
+}
+.list-content:active {
+  transform: translateY(1px);
+}
+.list-content:active p {
+  color: #FFFFFF;
+}
+
+.list-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.list-img {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.list-form {
+  display: flex;
+}
+
+.list-input {
+  font-size: 14px;
+  color: #dedede;
+  background-color: transparent;
+  padding: 11px 78px 11px 10px;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  transition: 0.35s;
+}
+.list-input::-moz-placeholder {
+  font-size: 14px;
+  color: #dedede;
+  -moz-transition: 0.35s;
+  transition: 0.35s;
+}
+.list-input::placeholder {
+  font-size: 14px;
+  color: #dedede;
+  transition: 0.35s;
+}
+
+.list-btn {
+  padding: 9px 10px;
+  position: relative;
+  right: 40px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #FF014F;
+  transition: 0.35s;
+  border-radius: 0px 5px 5px 0px;
+}
+.list-btn:hover {
+  color: #FF014F;
+  background-color: #FFFFFF;
+}

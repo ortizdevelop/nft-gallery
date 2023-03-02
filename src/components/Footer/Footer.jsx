@@ -1,14 +1,16 @@
 // Import Images
-import footerLogo from "../img/footer/Group 215.png";
-import footerBg from "../img/footer/bg.png";
-import headphones from "../img/footer/Group.png";
-import mail from "../img/footer/Group 153.png";
-import geo from "../img/footer/Group 154.png";
-import facebook from "../img/footer/facebook.png";
-import instagram from "../img/footer/instagram.png";
-import whatsapp from "../img/footer/whatsapp.png";
-import twitter from "../img/footer/twitter.png";
-import youtube from "../img/footer/youtube.png";
+import footerLogo from "./image/Group 215.png";
+import footerBg from "./image/bg.png";
+import headphones from "./image/Group.png";
+import mail from "./image/Group 153.png";
+import geo from "./image/Group 154.png";
+import facebook from "./image/facebook.png";
+import instagram from "./image/instagram.png";
+import whatsapp from "./image/whatsapp.png";
+import twitter from "./image/twitter.png";
+import youtube from "./image/youtube.png";
+
+import "./styles/Footer.css";
 
 const Footer = () => {
   return (

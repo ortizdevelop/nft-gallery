@@ -1,4 +1,4 @@
-@import './Imports.scss';
+@import '../../../styles/scss/Imports.scss';
 
 .footer {
     width: 100%;
@@ -98,7 +98,7 @@
 
 .list-content {
     cursor: pointer;
-    transition: $tr2;
+    transition: $tr1;
 
     &:hover {
         scale: 1.03;

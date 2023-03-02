@@ -2,27 +2,30 @@
 import { motion } from "framer-motion";
 
 //Import images
-import avatar1 from "../img/Collection/avatar1.png";
-import avatar2 from "../img/Collection/avatar2.png";
-import avatar3 from "../img/Collection/avatar3.png";
+import avatar1 from "./image/avatar1.png";
+import avatar2 from "./image/avatar2.png";
+import avatar3 from "./image/avatar3.png";
 
-import slider1 from "../img/Collection/slider1.png";
-import slider2 from "../img/Collection/slider2.png";
-import slider3 from "../img/Collection/slider3.png";
+import slider1 from "./image/slider1.png";
+import slider2 from "./image/slider2.png";
+import slider3 from "./image/slider3.png";
 
-import img1 from "../img/Collection/img1.png";
-import img2 from "../img/Collection/img2.png";
-import img3 from "../img/Collection/img3.png";
-import img4 from "../img/Collection/img4.png";
-import img5 from "../img/Collection/img5.png";
-import img6 from "../img/Collection/img6.png";
-import img7 from "../img/Collection/img7.png";
-import img8 from "../img/Collection/img8.png";
-import img9 from "../img/Collection/img9.png";
-import img10 from "../img/Collection/img10.png";
-import img11 from "../img/Collection/img11.png";
+import img1 from "./image/img1.png";
+import img2 from "./image/img2.png";
+import img3 from "./image/img3.png";
+import img4 from "./image/img4.png";
+import img5 from "./image/img5.png";
+import img6 from "./image/img6.png";
+import img7 from "./image/img7.png";
+import img8 from "./image/img8.png";
+import img9 from "./image/img9.png";
+import img10 from "./image/img10.png";
+import img11 from "./image/img11.png";
 
-import vector from "../img/Collection/Vector.png";
+import vector from "./image/Vector.png";
+
+// Import CSS
+import "./styles/Collection.css";
 
 const anim1 = {
   hidden: {

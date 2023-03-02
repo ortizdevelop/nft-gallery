@@ -1,4 +1,4 @@
-@import './Imports.scss';
+@import '../../../styles/scss/Imports.scss';
 
 .header {
     background: $bgcl;
@@ -95,7 +95,7 @@
                 height: 79.09px;
                 top: 80px;
                 left: 200px;
-                background-image: url('../../img/header/Vector.png');
+                background-image: url('../image/Vector.png');
             }
         }
     }

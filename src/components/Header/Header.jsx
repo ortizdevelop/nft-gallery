@@ -2,13 +2,16 @@
 import { motion } from "framer-motion";
 
 // Import images
-import headerLogo from "../img/header/logo.png";
-import { ReactComponent as Pinterest } from "../img/header/Pinterest.svg";
-import { ReactComponent as WW } from "../img/header/ww.svg";
-import { ReactComponent as PBox } from "../img/header/p.svg";
-import { ReactComponent as Triangle } from "../img/header/triangle.svg";
-import { ReactComponent as Wiki } from "../img/header/wiki.svg";
-import Bg from "../img/header/header-bg.svg";
+import headerLogo from "./image/logo.png";
+import { ReactComponent as Pinterest } from "./image/Pinterest.svg";
+import { ReactComponent as WW } from "./image/ww.svg";
+import { ReactComponent as PBox } from "./image/p.svg";
+import { ReactComponent as Triangle } from "./image/triangle.svg";
+import { ReactComponent as Wiki } from "./image/wiki.svg";
+import Bg from "./image/header-bg.svg";
+
+// Import CSS
+import "./styles/Header.css";
 
 // Import components
 
