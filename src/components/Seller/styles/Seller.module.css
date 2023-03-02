@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+.seller__title {
+  font-size: 16px;
+  color: #ff014f;
+  text-align: center;
+  transition: 0.35s;
+  margin-bottom: 20px;
+}
+.seller__subtitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #1E2D48;
+  text-align: center;
+  transition: 0.35s;
+  margin-bottom: 20px;
+}
+.seller__subtitle span {
+  color: #FF014F;
+  transition: 0.35s;
+}
+.seller__desc {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #313131;
+  text-align: center;
+  margin-bottom: 50.76px;
+}
+
+.seller_columns {
+  padding: 0 200px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.seller_columns__list {
+  display: flex;
+  margin: 30px;
+  width: 370px;
+  height: 130.29px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(221, 221, 221, 0.5);
+  cursor: pointer;
+  transition: 0.35s;
+}
+.seller_columns__list:hover {
+  transform: scale(1.02);
+}
+.seller_columns__list:hover p:nth-child(1) {
+  color: #FF014F;
+}
+.seller_columns__image {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20.37px;
+  transition: 0.35s;
+}
+.seller_columns__name {
+  position: relative;
+  top: 15%;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #313131;
+  transition: 0.35s;
+}
+.seller_columns__media {
+  position: relative;
+  top: 15%;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #313131;
+  margin-bottom: 18.61px;
+  transition: 0.35s;
+}
+.seller_columns__item {
+  position: relative;
+  top: 10%;
+  right: 30%;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #636363;
+  transition: 0.35s;
+}
+.seller_columns__part {
+  padding-top: 5px;
+  position: relative;
+  top: 75%;
+  left: 12%;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(221, 221, 221, 0.5);
+  transition: 0.35s;
+}
+.seller_columns__part p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 10px;
+  text-align: center;
+  color: #636363;
+  transition: 0.35s;
+}

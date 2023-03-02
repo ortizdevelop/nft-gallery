@@ -1,0 +1,150 @@
+@import '../../../styles/scss/Imports.scss';
+
+.seller {
+    &__title {
+        font-size: 16px;
+        color: #ff014f;
+        text-align: center;
+        transition: $tr;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        color: $color3;
+        text-align: center;
+        transition: $tr;
+        margin-bottom: 20px;
+
+        span {
+            color: $color2;
+            transition: $tr;
+        }
+    }
+
+    &__desc {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #313131;
+        text-align: center;
+        margin-bottom: 50.76px;
+    }
+}
+
+.seller_columns {
+    padding: 0 200px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    &__list {
+        display: flex;
+        margin: 30px;
+        width: 370px;
+        height: 130.29px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(221, 221, 221, 0.5);
+        cursor: pointer;
+        transition: $tr;
+
+        &:hover {
+            transform: scale(1.02);
+
+            p {
+                &:nth-child(1) {
+                    color: $color2;
+                }
+            }
+        }
+    }
+
+    &__image {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 20.37px;
+        transition: $tr;
+    }
+
+    &__name {
+        position: relative;
+        top: 15%;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        color: #313131;
+        transition: $tr;
+    }
+
+    &__media {
+        position: relative;
+        top: 15%;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        color: #313131;
+        margin-bottom: 18.61px;
+        transition: $tr;
+    }
+
+    &__item {
+        position: relative;
+        top: 10%;
+        right: 30%;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #636363;
+        transition: $tr;
+    }
+
+    &__part {
+        padding-top: 5px;
+        position: relative;
+        top: 75%;
+        left: 12%;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 0 4px 0 rgba(221, 221, 221, 0.5);
+        transition: $tr;
+
+        p {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 10px;
+            text-align: center;
+            color: #636363;
+            transition: $tr;
+        }
+    }
+}
+
+.sell {
+
+    &__title {}
+
+    &__content{}
+
+    &__column{}
+
+    &__list{}
+
+    &__image{}
+
+    &__subtitle{}
+
+    &__text{}
+
+    &__bg{}
+}
