@@ -1,11 +1,137 @@
 @import '../../../styles/scss/Imports.scss';
 
 .users {
-    margin-top: 110.09px;
+    margin-top: 210.09px;
+    padding: 0 375px;
 
-    .users_slider {}
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-transform: capitalize;
+        text-align: center;
+        color: #1e2d48;
+        margin-bottom: 21px;
+    }
 
-    .users_slider_btn {}
+    &__subtitle {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #313131;
+        margin-bottom: 50.75px;
+    }
 
-    .users_slider_btn_active {}
+    .users_slider {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        &__profile {
+            padding: 40px;
+            width: 734.81px;
+            height: 373.13px;
+            background-color: #fff;
+            border: 2px solid #ff014f;
+        }
+
+        &__profile_info {
+            display: flex;
+
+            li {
+                &:nth-child(3) {
+                    display: flex;
+                }
+            }
+        }
+
+        &__avatar {
+            margin-right: 20px;
+        }
+
+        &__column {
+            margin-top: 20.98px;
+        }
+
+        &__list {}
+
+        &__name {
+            font-size: 20px;
+            font-weight: 500;
+            color: #1e2d48;
+            margin-bottom: 6.77px;
+        }
+
+        &__post {
+            font-size: 16px;
+            color: #313131;
+            margin-bottom: 10.77px;
+        }
+
+        &__rating {
+            margin-right: 5px;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 17px;
+                height: 16.29px;
+                background-image: url('../images/star.png');
+            }
+
+            &:hover {
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 17px;
+                    height: 16.29px;
+                    background-image: url('../images/star-full.png');
+                }
+            }
+        }
+
+        &__description {
+            margin-top: 20.32px;
+            font-size: 20px;
+            line-height: 30px;
+            color: #313131;
+            margin-bottom: 39.26px;
+        }
+
+        &__pic {
+            position: relative;
+            z-index: 2;
+            right: 150px;
+        }
+    }
+
+    .slider_buttons {
+        display: flex;
+        position: relative;
+        left: 20%;
+        margin-top: 50.18px;
+    }
+}
+
+.users_slider_btn {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 5px;
+    margin-right: 10.34px;
+    background-color: #003545;
+    border-radius: 10px;
+    transition: $tr;
+}
+
+.users_slider_btn_active {
+    width: 40px;
+    height: 5px;
+    background-color: #ff014f;
+    margin-right: 10.34px;
+    border-radius: 10px;
+    transition: $tr;
 }
