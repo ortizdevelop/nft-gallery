@@ -2,25 +2,180 @@
 
 .roadmap {
     margin-top: 110.22px;
+    padding: 0 375px;
 
-    &__title {}
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        text-transform: capitalize;
+        color: #ca2ff2;
+        text-align: center;
+        margin-bottom: 15.46px;
+    }
 
-    &__lines {}
+    &__lines {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 4.73px;
+        margin-bottom: 30.74px;
 
-    &__subtitle {}
+
+
+        span {
+            &:nth-child(1) {
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 46.24px;
+                    height: 4.81px;
+                    background: #FF4A4A;
+                    border: 1px solid #FF4A4A;
+                    border-radius: 5px;
+                }
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                width: 60.7px;
+                height: 5px;
+                background: #FF4A4A;
+                border: 1px solid #FF4A4A;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        text-transform: undefined;
+        color: #313131;
+        text-align: center;
+        margin-bottom: 89.41px;
+    }
 }
 
 .roadmap_content {
+    position: relative;
+    right: 1.2%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    ul {
+        &:nth-child(1) {
+            position: relative;
+            top: 255px;
+            left: 25px;
+            text-align: right;
+
+            li {
+                text-align: right;
+            }
+        }
+
+        &:nth-child(2) {}
+
+        &:nth-child(3) {
+            position: relative;
+            top: 60px;
+            right: 25px;
+
+            li {
+                text-align: left;
+            }
+        }
+
+    }
 
     &__roadmap {}
 
     &__columns {}
 
-    &__list {}
+    &__list {
+        padding: 19px 25px;
+        margin-bottom: 192.75px;
+        width: 459.6px;
+        height: 192.75px;
+        background-color: #fff;
+        border: 0.30000001192092896px solid #e3e3e3;
+        border-radius: 4px;
+        box-shadow: 0 0 10px 0 rgba(221, 221, 221, 0.5);
+        transition: $tr;
 
-    &__title {}
+        &:hover {
+            border-radius: 4px;
+            border-bottom: 1px solid $color8;
+            background: url('../image/bg.png') center no-repeat;
 
-    &__subtitle {}
+            p {
+                &:nth-child(1) {
+                    color: $color2;
+                }
+            }
+        }
+    }
 
-    &__link {}
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #1e2d48;
+        margin-bottom: 10.77px;
+        transition: $tr;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        line-height: 25px;
+        text-transform: undefined;
+        color: #313131;
+        margin-bottom: 21.91px;
+        transition: $tr;
+    }
+
+    &__link {
+        padding: 7.14px 25.5px;
+        border: 1px solid #ff4a4a;
+        border-radius: 100px;
+        box-shadow: 4px 4px 8px 0 rgba(84, 84, 84, 0.12);
+        transition: $tr;
+
+        span {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: $color6;
+            transition: $tr;
+        }
+
+        &:hover {
+            span {
+                color: #ff4a4a;
+            }
+        }
+
+        &:active {
+            border: 1px solid $color2;
+            background: $color2;
+            box-shadow: 4px 4px 8px rgba(84, 84, 84, 0.12);
+            border-radius: 100px;
+
+            span {
+                color: $color4;
+            }
+        }
+    }
 }

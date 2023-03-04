@@ -22,6 +22,7 @@ import Collection from "./components/Collection/Collection";
 import Marketplace from "./components/Marketplace/Marketplace";
 import Auction from "./components/Auction/Auction";
 import Seller from "./components/Seller/Seller";
+import Roadmap from "./components/Roadmap/Roadmap";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Marketplace />
         <Auction />
         <Seller />
+        <Roadmap/>
       </main>
       <Footer />
     </div>
