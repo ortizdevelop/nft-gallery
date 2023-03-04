@@ -24,6 +24,7 @@ import Auction from "./components/Auction/Auction";
 import Seller from "./components/Seller/Seller";
 import Roadmap from "./components/Roadmap/Roadmap";
 import Users from "./components/Users/Users";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Seller />
         <Roadmap />
         <Users />
+        <Blog />
       </main>
       <Footer />
     </div>
