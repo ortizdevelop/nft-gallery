@@ -99,6 +99,7 @@ const Collection = () => {
       className="collection"
       viewport={{
         amount: 0.2,
+        once: true,
       }}
     >
       <article className="nft-collection">

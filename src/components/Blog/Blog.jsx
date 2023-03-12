@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import img1 from "./image/img1.png";
 import img2 from "./image/img2.png";
 import img3 from "./image/img3.png";
@@ -5,17 +7,148 @@ import img3 from "./image/img3.png";
 import styles from "./styles/Blog.module.css";
 
 function Blog() {
+  const animVar1 = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: (time) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: time * 0.2,
+        duration: 1,
+        ease: "easeInOut",
+      },
+    }),
+  };
+
+  const animVar1_1 = {
+    hidden: {
+      opacity: 0,
+      y: -50,
+    },
+    visible: (time) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: time * 0.2,
+        duration: 1,
+        ease: "easeInOut",
+      },
+    }),
+  };
+
+  const animVar2 = {
+    hidden: {
+      opacity: 0,
+      scale: 0.5,
+    },
+    visible: (time) => ({
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: time * 0.2,
+        duration: 1,
+        ease: "easeInOut",
+      },
+    }),
+  };
+
+  const animVar2_1 = {
+    hidden: {
+      opacity: 0,
+      scale: 0.5,
+    },
+    visible: (time) => ({
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: time * 0.4,
+        duration: 1,
+        ease: "easeInOut",
+      },
+    }),
+  };
+
+  const animVar3 = {
+    hidden: {
+      x: -50,
+      opacity: 0,
+    },
+    visible: (time) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: time * 0.2,
+        duration: 1,
+        ease: "easeInOut",
+      },
+    }),
+  };
+
+  const animVar3_1 = {
+    hidden: {
+      x: 50,
+      opacity: 0,
+    },
+    visible: (time) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: time * 0.2,
+        duration: 1,
+        ease: "easeInOut",
+      },
+    }),
+  };
+
   return (
-    <section className={styles.blog}>
-      <article>
-        <p className={styles.blog__title}>Our Latest Blog</p>
-        <p className={styles.blog__subtitle}>
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{
+        amount: 0.2,
+        once: true,
+      }}
+      className={styles.blog}
+    >
+      <motion.article
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          amount: 0.2,
+        }}
+      >
+        <motion.p
+          custom={1}
+          variants={animVar1_1}
+          className={styles.blog__title}
+        >
+          Our Latest Blog
+        </motion.p>
+        <motion.p
+          custom={2}
+          variants={animVar1}
+          className={styles.blog__subtitle}
+        >
           It has survived not only five centuries, but also the
-        </p>
-      </article>
-      <article className={styles.blog_news}>
+        </motion.p>
+      </motion.article>
+      <motion.article
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          amount: 0.2,
+        }}
+        className={styles.blog_news}
+      >
         <ul className={styles.blog_news__column}>
-          <li className={styles.blog_news__list}>
+          <motion.li
+            variants={animVar2}
+            custom={3}
+            className={styles.blog_news__list}
+          >
             <img src={img1} alt="" />
             <p className={styles.blog_news__data}>20 Agu 2022</p>
             <p className={styles.blog_news__title}>
@@ -26,8 +159,12 @@ function Blog() {
               nothing prevents our being able to do what we like ...
             </p>
             <button className={styles.blog_news__button}>Read More</button>
-          </li>
-          <li className={styles.blog_news__list}>
+          </motion.li>
+          <motion.li
+            variants={animVar2}
+            custom={4}
+            className={styles.blog_news__list}
+          >
             <img src={img2} alt="" />
             <p className={styles.blog_news__data}>20 Agu 2022</p>
             <p className={styles.blog_news__title}>
@@ -38,8 +175,12 @@ function Blog() {
               nothing prevents our being able to do what we like ...
             </p>
             <button className={styles.blog_news__button}>Read More</button>
-          </li>
-          <li className={styles.blog_news__list}>
+          </motion.li>
+          <motion.li
+            variants={animVar2}
+            custom={5}
+            className={styles.blog_news__list}
+          >
             <img src={img3} alt="" />
             <p className={styles.blog_news__data}>20 Agu 2022</p>
             <p className={styles.blog_news__title}>
@@ -50,14 +191,18 @@ function Blog() {
               nothing prevents our being able to do what we like ...
             </p>
             <button className={styles.blog_news__button}>Read More</button>
-          </li>
+          </motion.li>
         </ul>
-        <div className={styles.blog_slider}>
+        <motion.div
+          variants={animVar2}
+          custom={7.5}
+          className={styles.blog_slider}
+        >
           <span className={styles.blog_slider__button}></span>
           <span className={styles.blog_slider__button}></span>
-        </div>
-      </article>
-    </section>
+        </motion.div>
+      </motion.article>
+    </motion.section>
   );
 }
 
